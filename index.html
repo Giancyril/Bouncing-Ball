@@ -2,7 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jumping Ball</title>
+    <title>Bouncing Ball</title>
+    <style>  
+    #container{
+        position: relative;
+        height: 400px;
+        width: 1350px;        
+        background-image: url('https://steamuserimages-a.akamaihd.net/ugc/92728095778691803/EB5B511C833F84C1E6335CCCA1A6D587F9593D58/');
+        background-size: cover; /* Adjusts the image to cover the container */
+        background-position: center;
+    }
+    #ball{
+        position: absolute;
+        top: 180px; /* Adjusted position to center vertically */
+        left: 650px; /* Left position remains the same */
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: black;
+    }
+
+    #line{
+        width: 100%; /* Centering the line */
+        height: 10px;
+        background: #000;
+        margin: 0 auto; /* Centering the line */
+    }
+    #start-btn{
+        padding: 10px 20px;
+        margin-top: 10px;
+        color: #000;
+        background-color: #fff;
+        border: 2px solid #000;
+        border-radius: 10px;
+        font-weight: 900;
+        display: block;
+        margin: 0 auto; /* Centering the start button */
+    }
+    #start-btn:hover{
+        background-color: #eee;
+    }
+   </style>
 </head>
 <body>
     <div id="container">
